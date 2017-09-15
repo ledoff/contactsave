@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(), scomment, Toast.LENGTH_SHORT);
         toast.show();
     }
-
+// проверка на наличие записей
     public int dbread(SQLiteDatabase db, String tbl) {
         Cursor c = db.query(tbl, null, null, null, null, null, null);
         int nint = 0;
